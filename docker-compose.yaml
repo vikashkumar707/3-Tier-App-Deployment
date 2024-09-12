@@ -41,4 +41,8 @@ networks:
 
 volumes:
   mongo-data:
+<<<<<<< HEAD
     driver: local 
+=======
+    driver: local  
+>>>>>>> d5ea30f8c7a2bd028b56a1dd7e95408e553a5a28
