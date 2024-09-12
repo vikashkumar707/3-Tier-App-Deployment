@@ -21,14 +21,17 @@ jobs:
             aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
         - name: terraform init
-          run: 
+          run: |
+            cd Task2
             terraform init 
 
         - name: terraform plan
-          run: 
+          run: |
+            cd Task2
             terraform plan
 
         - name: terraform apply
-          run: 
+          run: |
+            cd Task2
             terraform apply -auto-approve
 

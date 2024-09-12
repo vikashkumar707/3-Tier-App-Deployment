@@ -22,9 +22,11 @@ jobs:
            
   
         - name: terraform init
-          run: 
+          run: |
+            cd Task2
             terraform init 
             
         - name: destroy
-          run: 
+          run: |
+            cd Task2
             terraform destroy -auto-approve
